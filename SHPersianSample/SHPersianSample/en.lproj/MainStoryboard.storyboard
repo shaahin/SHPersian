@@ -14,8 +14,9 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="این یک متن فارسی است" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-AL-qt6" customClass="SHLabel">
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="0.19899463123094394" green="0.5964595444700358" blue="0.78836495535714279" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.19899463119999999" green="0.59645954450000005" blue="0.78836495539999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Font" value="BYekan"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Shadow" value="NO"/>
@@ -25,16 +26,17 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="0.12549020350000001" green="0.3803921938" blue="0.47843140360000003" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Font" value="BYekan"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Shadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99444444440000002" green="0.98888888890000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="56" id="LO8-ZE-xZa"/>
-                            <constraint firstItem="AjF-AN-GLy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="103" id="RVV-87-Hy3"/>
+                            <constraint firstItem="AjF-AN-GLy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="94" id="LiE-Zd-r02"/>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="AjF-AN-GLy" secondAttribute="centerX" type="default" id="Txh-YR-PEW"/>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="X5e-XE-s6i"/>
                         </constraints>
@@ -44,6 +46,14 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SHLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SHLabel.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
