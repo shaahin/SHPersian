@@ -71,7 +71,7 @@
     {
         // Drawing code
         CGSize myShadowOffset = CGSizeMake(0, 0);
-        float myColorValues[] = {0, 0, 0, .8};
+        float myColorValues[] = {255, 255, 255, .8};
         CGContextRef myContext = UIGraphicsGetCurrentContext();
         CGContextSaveGState(myContext);
 

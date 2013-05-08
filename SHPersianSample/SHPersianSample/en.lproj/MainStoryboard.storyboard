@@ -13,9 +13,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="این یک متن فارسی است" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-AL-qt6" customClass="SHLabel">
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" red="0.19899463119999999" green="0.59645954450000005" blue="0.78836495539999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="kcY-ik-uO5"/>
+                                    <constraint firstAttribute="height" constant="30" id="tgl-fo-Teb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="23"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.054901960784313725" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.95493269189999996" green="1" blue="0.95578744309999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.95493269189999996" green="1" blue="0.95578744309999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Font" value="BYekan"/>
@@ -33,12 +38,12 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99444444440000002" green="0.98888888890000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="AjF-AN-GLy" secondAttribute="centerX" type="default" id="Hyc-4Q-TX4"/>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="56" id="LO8-ZE-xZa"/>
-                            <constraint firstItem="AjF-AN-GLy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="94" id="LiE-Zd-r02"/>
-                            <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="AjF-AN-GLy" secondAttribute="centerX" type="default" id="Txh-YR-PEW"/>
-                            <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="X5e-XE-s6i"/>
+                            <constraint firstItem="AjF-AN-GLy" firstAttribute="top" secondItem="ebG-AL-qt6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="LSg-FJ-bsS"/>
+                            <constraint firstItem="ebG-AL-qt6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="slN-1K-8ub"/>
                         </constraints>
                     </view>
                 </viewController>
