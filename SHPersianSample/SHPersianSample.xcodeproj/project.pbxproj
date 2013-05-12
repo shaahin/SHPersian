@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1173F9173FB547000C4B81 /* Tehran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1173F8173FB547000C4B81 /* Tehran.jpg */; };
 		EBA370D8170AE86300A7A07B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA370D7170AE86300A7A07B /* UIKit.framework */; };
 		EBA370DA170AE86300A7A07B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA370D9170AE86300A7A07B /* Foundation.framework */; };
 		EBA370DC170AE86300A7A07B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA370DB170AE86300A7A07B /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB1173F8173FB547000C4B81 /* Tehran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tehran.jpg; sourceTree = "<group>"; };
 		EBA370D4170AE86300A7A07B /* SHPersianSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHPersianSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA370D7170AE86300A7A07B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EBA370D9170AE86300A7A07B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 		EBA370DD170AE86300A7A07B /* SHPersianSample */ = {
 			isa = PBXGroup;
 			children = (
+				EB1173F8173FB547000C4B81 /* Tehran.jpg */,
 				EBA370FA170AE86F00A7A07B /* SHPersian */,
 				EBA370E6170AE86300A7A07B /* AppDelegate.h */,
 				EBA370E7170AE86300A7A07B /* AppDelegate.m */,
@@ -202,6 +205,7 @@
 				EBA370EE170AE86300A7A07B /* Default-568h@2x.png in Resources */,
 				EBA370F1170AE86300A7A07B /* MainStoryboard.storyboard in Resources */,
 				EBA37107170AFF4C00A7A07B /* README.md in Resources */,
+				EB1173F9173FB547000C4B81 /* Tehran.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +262,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -282,7 +286,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -295,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHPersianSample/SHPersianSample-Prefix.pch";
 				INFOPLIST_FILE = "SHPersianSample/SHPersianSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,6 +311,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SHPersianSample/SHPersianSample-Prefix.pch";
 				INFOPLIST_FILE = "SHPersianSample/SHPersianSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
