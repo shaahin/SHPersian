@@ -71,17 +71,14 @@
     {
         // Drawing code
         CGSize myShadowOffset = CGSizeMake(0, 0);
-        float myColorValues[] = {255, 255, 255, .8};
+
         CGContextRef myContext = UIGraphicsGetCurrentContext();
         CGContextSaveGState(myContext);
-
-        CGColorSpaceRef myColorSpace = CGColorSpaceCreateDeviceRGB();
-        CGColorRef myColor = CGColorCreate(myColorSpace, myColorValues);
+        CGColorRef myColor = [self.shadowColor CGColor];
         CGContextSetShadowWithColor (myContext, myShadowOffset, 5, myColor);
         [super drawTextInRect:rect];
 
         CGColorRelease(myColor);
-        CGColorSpaceRelease(myColorSpace);
         CGContextRestoreGState(myContext);
     }else
         [super drawRect:rect];

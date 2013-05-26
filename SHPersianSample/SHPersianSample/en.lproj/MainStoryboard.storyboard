@@ -21,17 +21,22 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="23"/>
                                 <color key="textColor" red="0.95493269189999996" green="1" blue="0.95578744309999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.95493269189999996" green="1" blue="0.95578744309999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="0.95493269189999996" green="1" blue="0.95578744309999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.98431372549999996" green="0.0" blue="0.44705882349999998" alpha="1" colorSpace="deviceRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Font" value="BYekan"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="Shadow" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="این یک متن سایه‌دار است" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjF-AN-GLy" customClass="SHLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="این یک متن سایه‌دار است" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjF-AN-GLy" customClass="SHLabel">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iKX-m4-o9J"/>
+                                    <constraint firstAttribute="width" constant="166" id="rxw-Nw-3Mp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="0.96624410152435303" green="0.40005231120120049" blue="0.14371837187152997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.23137254900000001" green="0.63921568630000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Font" value="BYekan"/>
@@ -42,7 +47,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="36" id="68f-nr-CVP"/>
-                            <constraint firstItem="AjF-AN-GLy" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="59" id="Cld-85-tb4"/>
+                            <constraint firstItem="AjF-AN-GLy" firstAttribute="centerX" secondItem="ebG-AL-qt6" secondAttribute="centerX" type="default" id="7K0-sa-T9u"/>
                             <constraint firstItem="ebG-AL-qt6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Fug-a0-jgK"/>
                             <constraint firstItem="AjF-AN-GLy" firstAttribute="top" secondItem="3" secondAttribute="top" constant="79" id="M4J-op-mKe"/>
                             <constraint firstItem="fhc-uC-GSD" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="aGB-lj-1QA"/>
