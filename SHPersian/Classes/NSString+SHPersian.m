@@ -277,5 +277,16 @@ static BOOL IsTransparent(uint c)
     free(shaped);
     return toReturn;
 }
-
+- (NSString *) persianDigits
+{
+    return [[[[[[[[[[self stringByReplacingOccurrencesOfString:@"1" withString:@"۱"] stringByReplacingOccurrencesOfString:@"2" withString:@"۲"]  stringByReplacingOccurrencesOfString:@"3" withString:@"۳"] stringByReplacingOccurrencesOfString:@"4" withString:@"۴"] stringByReplacingOccurrencesOfString:@"5" withString:@"۵"] stringByReplacingOccurrencesOfString:@"6" withString:@"۶"] stringByReplacingOccurrencesOfString:@"7" withString:@"۷"] stringByReplacingOccurrencesOfString:@"8" withString:@"۸"] stringByReplacingOccurrencesOfString:@"9" withString:@"۹"] stringByReplacingOccurrencesOfString:@"0" withString:@"۰"];
+}
+- (NSString *) latinDigits
+{
+    return [[[[[[[[[[self stringByReplacingOccurrencesOfString:@"۱" withString:@"1"] stringByReplacingOccurrencesOfString:@"۲" withString:@"2"]  stringByReplacingOccurrencesOfString:@"۳" withString:@"3"] stringByReplacingOccurrencesOfString:@"۴" withString:@"5"] stringByReplacingOccurrencesOfString:@"۵" withString:@"5"] stringByReplacingOccurrencesOfString:@"۶" withString:@"6"] stringByReplacingOccurrencesOfString:@"۷" withString:@"7"] stringByReplacingOccurrencesOfString:@"۸" withString:@"8"] stringByReplacingOccurrencesOfString:@"۹" withString:@"9"] stringByReplacingOccurrencesOfString:@"۰" withString:@"0"];
+}
+- (NSString *) normalizedPersianString
+{
+    return [[[self stringByReplacingOccurrencesOfString:@"ي" withString:@"ی"] stringByReplacingOccurrencesOfString:@"ك" withString:@"ک"] stringByReplacingOccurrencesOfString:@"ه" withString:@"ه"];
+}
 @end

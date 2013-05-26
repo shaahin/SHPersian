@@ -10,4 +10,7 @@
 
 @interface NSString (SHPersian)
 - (NSString *) persianizedString;
+- (NSString *) persianDigits;
+- (NSString *) latinDigits;
+- (NSString *) normalizedPersianString;
 @end
