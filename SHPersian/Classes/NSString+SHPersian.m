@@ -180,7 +180,7 @@ static BOOL IsTransparent(uint c)
 -(NSString *) persianizedString
 {
     NSString *normal = self;
-    normal = [normal stringByReplacingOccurrencesOfString:@"ي" withString:@"ی"];
+    normal = [normal normalizedPersianString];
     int len = (int)[normal length];
     CharRep crep = { 0 };
     CombCharRep combcrep;
