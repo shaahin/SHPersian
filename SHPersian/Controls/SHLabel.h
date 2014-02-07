@@ -11,4 +11,7 @@
 @interface SHLabel : UILabel
 @property (nonatomic) NSString *fontName;
 @property (nonatomic) BOOL hasShadow;
+
+- (float) actualHeight;
+- (void) resizeToFitText;
 @end

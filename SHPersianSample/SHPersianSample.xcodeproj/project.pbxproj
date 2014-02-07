@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB020B8618A58D3300BD83B0 /* SHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB020B8518A58D3300BD83B0 /* SHButton.m */; };
+		EB020B8B18A58EF800BD83B0 /* BYekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB020B8A18A58EF800BD83B0 /* BYekan.ttf */; };
+		EB020C3F18A59D1200BD83B0 /* SHPersianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB020C3E18A59D1200BD83B0 /* SHPersianViewController.m */; };
 		EB1173F9173FB547000C4B81 /* Tehran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1173F8173FB547000C4B81 /* Tehran.jpg */; };
 		EBA370D8170AE86300A7A07B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA370D7170AE86300A7A07B /* UIKit.framework */; };
 		EBA370DA170AE86300A7A07B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA370D9170AE86300A7A07B /* Foundation.framework */; };
@@ -23,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB020B8418A58D3300BD83B0 /* SHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHButton.h; sourceTree = "<group>"; };
+		EB020B8518A58D3300BD83B0 /* SHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHButton.m; sourceTree = "<group>"; };
+		EB020B8718A58D7A00BD83B0 /* SHPersian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPersian.h; sourceTree = "<group>"; };
+		EB020B8A18A58EF800BD83B0 /* BYekan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BYekan.ttf; sourceTree = "<group>"; };
+		EB020C3D18A59D1200BD83B0 /* SHPersianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHPersianViewController.h; sourceTree = "<group>"; };
+		EB020C3E18A59D1200BD83B0 /* SHPersianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHPersianViewController.m; sourceTree = "<group>"; };
 		EB1173F8173FB547000C4B81 /* Tehran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tehran.jpg; sourceTree = "<group>"; };
 		EBA370D4170AE86300A7A07B /* SHPersianSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHPersianSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA370D7170AE86300A7A07B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -96,6 +105,8 @@
 				EBA370E7170AE86300A7A07B /* AppDelegate.m */,
 				EBA370EF170AE86300A7A07B /* MainStoryboard.storyboard */,
 				EBA370DE170AE86300A7A07B /* Supporting Files */,
+				EB020C3D18A59D1200BD83B0 /* SHPersianViewController.h */,
+				EB020C3E18A59D1200BD83B0 /* SHPersianViewController.m */,
 			);
 			path = SHPersianSample;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			children = (
 				EBA370FC170AE87A00A7A07B /* NSString+SHPersian.h */,
 				EBA370FD170AE87A00A7A07B /* NSString+SHPersian.m */,
+				EB020B8718A58D7A00BD83B0 /* SHPersian.h */,
 			);
 			name = Classes;
 			path = ../../SHPersian/Classes;
@@ -137,6 +149,8 @@
 			children = (
 				EBA370FF170AE87A00A7A07B /* SHLabel.h */,
 				EBA37100170AE87A00A7A07B /* SHLabel.m */,
+				EB020B8418A58D3300BD83B0 /* SHButton.h */,
+				EB020B8518A58D3300BD83B0 /* SHButton.m */,
 			);
 			name = Controls;
 			path = ../../SHPersian/Controls;
@@ -145,6 +159,7 @@
 		EBA37103170AF68E00A7A07B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EB020B8A18A58EF800BD83B0 /* BYekan.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -184,6 +199,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = EBA370CB170AE86300A7A07B;
 			productRefGroup = EBA370D5170AE86300A7A07B /* Products */;
@@ -200,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB020B8B18A58EF800BD83B0 /* BYekan.ttf in Resources */,
 				EBA370EA170AE86300A7A07B /* Default.png in Resources */,
 				EBA370EC170AE86300A7A07B /* Default@2x.png in Resources */,
 				EBA370EE170AE86300A7A07B /* Default-568h@2x.png in Resources */,
@@ -216,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB020B8618A58D3300BD83B0 /* SHButton.m in Sources */,
 				EBA370E4170AE86300A7A07B /* main.m in Sources */,
 				EBA370E8170AE86300A7A07B /* AppDelegate.m in Sources */,
 				EBA37101170AE87A00A7A07B /* NSString+SHPersian.m in Sources */,
+				EB020C3F18A59D1200BD83B0 /* SHPersianViewController.m in Sources */,
 				EBA37102170AE87A00A7A07B /* SHLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

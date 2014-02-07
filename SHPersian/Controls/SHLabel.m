@@ -6,11 +6,9 @@
 //  Copyright (c) 2013 Shaahin.us. All rights reserved.
 //
 
-#define DEFAULT_FONT_NAME @"BTitr"
-
 
 #import "SHLabel.h"
-#import "NSString+SHPersian.h"
+#import "SHPersian.h"
 
 @implementation SHLabel
 @synthesize fontName = _fontName;
@@ -84,4 +82,15 @@
         [super drawRect:rect];
 }
 
+- (float)actualHeight
+{
+    CGSize size = [self sizeThatFits:CGSizeMake(self.frame.size.width, FLT_MAX)];
+    return size.height;
+}
+- (void)resizeToFitText
+{
+    CGRect rect = self.frame;
+    rect.size.height = [self actualHeight];
+    self.frame = rect;
+}
 @end
