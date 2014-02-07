@@ -16,3 +16,5 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+SHPersian/Classes/Pacatio/Base.lproj/Main_iPad.storyboard
