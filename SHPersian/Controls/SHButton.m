@@ -47,5 +47,6 @@
 - (void)setTitle:(NSString *)title forState:(UIControlState)state
 {
     [super setTitle:[title persianizedString] forState:state];
+    [self.titleLabel setFont:[UIFont fontWithName:self.fontName size:self.titleLabel.font.pointSize]];
 }
 @end
