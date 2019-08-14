@@ -45,4 +45,4 @@ Shahin Katebi
 
 
 
-#### Note: This document is being updated.
+#### Note: This repository is outdated and it is not maintained anymore.
